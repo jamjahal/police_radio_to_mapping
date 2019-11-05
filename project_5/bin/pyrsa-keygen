@@ -1,0 +1,10 @@
+#!/Users/allanshomefolder/GA/projects/police_radio_to_mapping/project_5/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from rsa.cli import keygen
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(keygen())
